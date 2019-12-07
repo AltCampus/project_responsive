@@ -1,0 +1,214 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------------ My Css ------------------------ */
+
+html {
+    font-size: 20px;
+}
+.head {
+    margin: 0 auto;
+    background: #113D69;
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.nav_parent {
+    padding: 1rem 1rem;
+}
+.logo{
+    padding-left: 2rem;
+    border: 10px;
+    /* box-shadow: 5px 5px 2px black; */
+}
+.logo img {
+    width: 10rem;
+    height: 5rem;
+}
+.links {
+    padding-top: 1.3rem;
+    padding-right: 1.2rem;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding-right: 1.4rem;
+}
+
+/* ---------------------- main section 1 ------------------- */
+
+.section_1 {
+    background: #90958a;
+background-image: linear-gradient(90deg, #6e40aa, #be3caf, #fe4b83, #ff7747, #e3b62f, #b0ef5a, #53f666, #1edfa2, #23acd8, #4c6fdc, #4c6fdc);
+}
+.sec_div {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 3rem;
+    
+}
+.item {
+    width: 33%;
+}
+.blank_box{
+    width: 30%;
+}
+.item img {
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 8px 8px 8px black;
+}
+
+
+/* -------------------- main section 2------------------ */
+
+.section_2 {
+    background: #bd9f63;
+background-image: linear-gradient(90deg, #a50026, #d3322b, #f16d43, #fcab63, #fedc8c, #f9f7ae, #d7ee8e, #a4d86f, #64bc61, #23964f, #23964f);
+}
+
+/* ------------------------- calc --------------- */
+.section_calc {
+    background-color: #113d69;
+}
+.calc_container {
+    background-color: rgb(230, 167, 167);
+    border-radius: 15px;
+    line-height: 1.5;
+    color: black;
+}
+.calc_head {
+    width: 100%;
+    text-align: center;
+    background-color: #D79821;
+    border-radius: 10px;
+}
+.calc_parent {
+    display: flex;
+    justify-content: space-between;
+}
+.blank_box_clc {
+    width: 15%;
+}
+.calculator {
+    width: 50%;
+    padding: 20px 20px;
+    line-height: 1.6;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+    background: #e6a257;
+background-image: linear-gradient(90deg, #ffffe5, #fff8c4, #feeba2, #fed676, #febb4a, #fb9a2c, #ee7919, #d85b0a, #b74304, #8f3204, #8f3204);
+}
+
+.calc_heading {
+    font-size: 1.75rem;
+    color: brown;
+    font-weight: 700;
+}
+.para {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: chocolate;
+}
+.input_para {
+    font-size: 1rem;
+    color: chocolate;
+}
+#final_amount {
+    font-size: 2.5rem;
+}
+.btn_div {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+.btn {
+    width: 50%;
+    height: 1.75rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    color: chocolate;
+    background-color: rgb(230, 167, 167);
+    font-weight: 700;
+    border: 1px solid black;
+}
+
+/* ------------- footer ------------- */
+
+footer {
+    background-color: #113d69;
+    height: 5rem;
+}
+.foot {
+    text-align: center;
+    padding-top: 1.9rem;
+}
+
+/* ----------------- media qu------- */
+
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .sec_div{
+        text-align: center;
+        align-content: center;
+    }
+    /* .blank_box {
+        width: 5px;
+    } */
+}

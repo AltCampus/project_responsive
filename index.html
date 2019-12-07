@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Presentation</title>
+    <link rel="stylesheet" href="Stylesheet/style.css">
+</head>
+<body>
+    <!-- ------ Header --------- -->
+    <header class="head">
+        <section class="">
+            <nav class="flex nav_parent">
+                <div class="logo">
+                    <img src="images/logo3.jpeg" alt="logo">
+                </div>
+                <div class="links">
+                    <a href="#">Home</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Locate</a>
+                    <a href="#">More</a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <!-- ------------ Main ------------- -->
+    <main>
+        <!-- ------------- Main Section 1 --------- -->
+        <section class="section_1">
+           <div class="sec_div">
+                <article class="flex section1_parent">
+                    <div class="item blank_box"></div>
+                    <div class="item img_box img1">
+                        <img src="images/02.jpg" alt="pic">
+                    </div>
+                    <div class="item blank_box"></div>
+                </article>
+           </div>
+        </section>
+        <!-- ------------- Main Section 2 --------- -->
+        <section class="section_2">
+            <div class="sec_div">
+                <article class="flex section2_parent">
+                    <div class="item img_box">
+                        <img src="images/01.jpg" alt="pic">
+                    </div>
+                    <div class="item blank_box"></div>
+                    <div class="item img_box">
+                        <img src="images/06.jpg" alt="pic">
+                    </div>
+                </article>
+            </div>
+        </section>
+             <!-- ------------- Main Section calc --------- -->
+    
+    <section class="section_calc">
+        <div class="sec_div">
+            <div class="calc_parent">
+                <div class="blank_box_clc"></div>
+                <div class="calculator">
+                    <div class="calc_head">
+                        <p class="calc_heading">DISCOUNT CALCULATOR</p>
+                    </div>
+                    <p class="para">How Much is your bill?</p>
+                    <p class="input_para"> Bill Amount <input type="text" id="bill_amount"></p>
+                    <p class="para">Do You get any Discount?</p>
+                    <p class="input_para">Discount Percentage <input type="text" id="discount_percent"></p>
+                    <div class="btn_div"><button class="btn" id="submit">Check Now</button></div>
+                    <p class="para">Your bill is</p>
+                    <p class="para" id="final_amount"></p>
+                </div>
+                <div class="blank_box_clc"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function calc_emi (){
+            var bill_amount = document.getElementById("bill_amount").value;
+            var discount_percent = document.getElementById("discount_percent").value;
+
+            if(bill_amount===0 && discount_percent ===0){alert("please enter amount")};
+            var final_amount = bill_amount-(bill_amount*(discount_percent/100));
+            document.getElementById("final_amount").innerHTML=final_amount;
+        }
+        document.getElementById("submit").onclick=function()
+        {calc_emi();};
+    </script>
+    <!-- ------------- Main Section 3 --------- -->
+    <section class="section_2">
+        <div class="sec_div">
+            <article class="flex section2_parent">
+                <div class="item img_box">
+                <img src="images/05.jpg" alt="pic"></div>
+                <div class="item blank_box"></div>
+                <div class="item img_box">
+                    <img src="images/11.jpg" alt="pic">
+                </div>
+            </article>
+        </div>
+    </section>
+         <!-- ------------- Main Section 4 --------- -->
+        <section class="section_1">
+            <div class="sec_div">
+                <article class="flex section1_parent">
+                    <div class="item blank_box"></div>
+                    <div class="item img_box">
+                        <img src="images/08.jpg" alt="pic">
+                    </div>
+                    <div class="item blank_box"></div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="foot">
+            <small>&copy;All Rights Reserved 2020</small>
+        </section>
+    </footer>
+</body>
+</html>
